@@ -110,7 +110,6 @@ module.exports = class extends Generator {
       ".env.test",
       ".eslintrc.js",
       ".eslintrc.json",
-      ".gitignore",
       "babel.config.js",
       "ci.yml",
       "stylelint.config.js",
