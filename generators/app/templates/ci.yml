@@ -1,0 +1,51 @@
+Global:
+    version: 2.0
+
+Default:
+    profile: [buildTest]
+
+Profiles:
+    - profile:
+      name: buildTest # 场景名称, 流水线配置会用到
+      mode: AGENT
+      environment:
+        image: DECK_CENTOS7U5_K3
+      build:
+        command: NODE_ENV=production sh ./build/build.sh # 场景的编译命令
+        cache:
+          enable: true
+          type: REPO
+          paths:
+            - node_modules
+      artifacts:
+        release: true
+
+    - profile:
+      name: buildDev
+      mode: AGENT
+      environment:
+        image: DECK_CENTOS7U5_K3
+      build:
+        command: NODE_ENV=production sh ./build/build.sh
+        cache:
+          enable: true
+          type: REPO
+          paths:
+            - node_modules
+      artifacts:
+        release: true
+
+    - profile:
+      name: buildProduction
+      mode: AGENT
+      environment:
+        image: DECK_CENTOS7U5_K3
+      build:
+        command: NODE_ENV=production sh ./build/build.sh
+        cache:
+          enable: true
+          type: REPO
+          paths:
+            - node_modules
+      artifacts:
+        release: true

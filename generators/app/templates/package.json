@@ -1,0 +1,56 @@
+{
+    "name": "<%= fullName %>",
+    "description": "<%= description %>",
+    "version": "1.0.0",
+    "private": true,
+    "author": {
+        "name": "<%= author %>",
+        "email": "<%= email %>"
+    },
+    "license": "<%= license %>",
+    "scripts": {
+        "serve": "vue-cli-service serve --open",
+        "build": "vue-cli-service build",
+        "build-test": "vue-cli-service build --mode test",
+        "lint": "vue-cli-service lint",
+        "deploy": "sh build/deploy.sh",
+        "svg": "node build/svg.js"
+    },
+    "dependencies": {
+        "ant-design-vue": "^2.1.6",
+        "axios": "^0.21.1",
+        "core-js": "^3.6.5",
+        "lodash": "^4.17.21",
+        "normalize.css": "^8.0.1",
+        "vue": "^3.0.0",
+        "vue-i18n": "^9.0.0",
+        "vue-router": "^4.0.0-0",
+        "vuex": "^4.0.0-0"
+    },
+    "devDependencies": {
+        "@ecomfe/stylelint-config": "^1.1.1",
+        "@types/lodash": "^4.14.169",
+        "@typescript-eslint/eslint-plugin": "^4.18.0",
+        "@typescript-eslint/parser": "^4.18.0",
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-eslint": "~4.5.0",
+        "@vue/cli-plugin-router": "~4.5.0",
+        "@vue/cli-plugin-typescript": "~4.5.0",
+        "@vue/cli-plugin-vuex": "~4.5.0",
+        "@vue/cli-service": "~4.5.0",
+        "@vue/compiler-sfc": "^3.0.0",
+        "@vue/eslint-config-typescript": "^7.0.0",
+        "babel-eslint": "^11.0.0-beta.2",
+        "babel-plugin-import": "^1.13.3",
+        "babel-plugin-lodash": "^3.3.4",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^7.0.0",
+        "less": "^3.0.4",
+        "less-loader": "^5.0.0",
+        "stylelint": "^13.13.1",
+        "typescript": "~4.1.5",
+        "uuaper": "^3.1.2",
+        "vue-eslint-parser": "^7.6.0",
+        "vue-svg-loader": "^0.17.0-beta.2"
+    }
+}
